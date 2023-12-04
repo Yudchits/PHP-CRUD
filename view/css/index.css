@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #8c1978;
+    color: white;
+}
+
+#container {
+    padding: 2em;
+    text-align: center;
+}
+
+#users {
+    border: 2px dashed white;
+    margin: 2em auto;
+    padding: 2em;
+    font-size: 24px;
+}
+
+.btn {
+    border: 0;
+    padding: 0.3em;
+    margin-right: 0.5em;
+    font-size: inherit;
+}
+
+.btn:hover {
+    cursor: grab;
+    opacity: 0.7;
+}
+

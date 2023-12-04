@@ -5,13 +5,6 @@ class User
     private int $id;
     private string $email;
     private string $password;
-    private \MongoDB\BSON\Timestamp  $registration_date;
-
-    public function __construct(string $email, string $password)
-    {
-        $this->email = $email;
-        $this->password = $password;
-    }
 
     public function getId(): int
     {
@@ -41,15 +34,5 @@ class User
     public function setPassword(string $password): void
     {
         $this->password = $password;
-    }
-
-    public function getRegistrationDate(): \MongoDB\BSON\Timestamp
-    {
-        return $this->registration_date;
-    }
-
-    public function setRegistrationDate(\MongoDB\BSON\Timestamp $registration_date): void
-    {
-        $this->registration_date = $registration_date;
     }
 }

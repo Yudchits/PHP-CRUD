@@ -1,8 +1,8 @@
 <?php
 
-class PDOConnection
+class Dbh
 {
-    private static ?PDOConnection $instance = null;
+    private static ?Dbh $instance = null;
     private const HOST = 'localhost';
     private const USER = 'root';
     private const PASSWORD = 'pavlik_1.6pro';
@@ -19,7 +19,7 @@ class PDOConnection
         return $pdo;
     }
 
-    public static function getInstance(): PDOConnection
+    public static function getInstance(): Dbh
     {
         if(is_null(self::$instance))
         {
